@@ -162,7 +162,8 @@ cython_debug/
 #.idea/
 
 # Data
-data/
+data/raw/**
+data/extracted/**
 
 # Python pickles
 *.pkl
