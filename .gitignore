@@ -167,3 +167,5 @@ data/extracted/**
 
 # Python pickles
 *.pkl
+
+.DS_STORE
