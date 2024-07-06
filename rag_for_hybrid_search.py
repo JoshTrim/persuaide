@@ -28,11 +28,11 @@ load_dotenv()
 
 # Auth
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Test
 assert len(PINECONE_API_KEY) > 0
-assert len(OPENAI_API_KEY) > 0
+# assert len(OPENAI_API_KEY) > 0
 
 # Pickle utils
 def dump_pickle(dictionary: dict):
