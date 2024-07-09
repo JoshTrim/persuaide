@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 from query import query_db, parse_response
 
 app = FastAPI()
@@ -10,3 +10,9 @@ async def query_api(query):
         res = parse_response(res)
         return {"result": res}
 
+@app.post("/query")
+async def query_api(query: str = Body(..., embed=True)):
+    if query:
+        res = query_db(query)
+        res = parse_response(res)
+        return {"result": res}
