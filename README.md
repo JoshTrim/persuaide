@@ -9,6 +9,7 @@
 ## To use:
 - Install python
 - Create a virtualenv and install dependencies with `pip install -r requirements.txt`
+- just api deps `pip install -r api_requirements.txt`
 
 
 **The below two steps are only necessary if you are adding new content to the DB**
